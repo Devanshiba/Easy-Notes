@@ -1,0 +1,56 @@
+<!-- TO-DO LIST PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/STYLE(PAGE 3).css">
+    <title>EASY NOTES-TO DO LISTS</title>
+</head>
+<body>
+    <nav>
+        <div class="sec1">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/03/51/5a/03515aee-cc68-8b05-e552-68a8c97f5ec3/AppIcon-1x_U007ephone-0-0-85-220-0.jpeg/256x256bb.jpg" alt="img">
+            <h1>EASY NOTES.</h1>
+        </div>
+        <div class="nav-s">
+            <input placeholder="Search for anything" class="s-input">
+            <i class="fa-solid fa-magnifying-glass sicon"></i>
+        </div>
+        <a href="NOTES(PAGE 2).html"><section>
+            <i class="fa-solid fa-table-list"></i>
+            <p>ALL NOTES</p>
+          </section>
+        </a>
+    </nav>
+
+    <div class="main">
+            <header>
+                <h1>My To Do List</h1>
+            </header>
+            <form action="#">
+                <input type="text" class="todo-input">
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-circle fa-lg"></i>
+                </button>
+                <div class="select">
+                    <select name="todos" class="filter-todo">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="incomplete">Incomplete</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+    </div>
+    <script src="JS/SCRIPT(PAGE 3).js"></script>
+    
+</body>
+</html>

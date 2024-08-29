@@ -1,0 +1,45 @@
+<!-- SIGN IN PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY NOTES - NOTES, TO-DO LISTS</title>
+    <link rel="stylesheet" href="CSS/STYLE(PAGE 1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/03/51/5a/03515aee-cc68-8b05-e552-68a8c97f5ec3/AppIcon-1x_U007ephone-0-0-85-220-0.jpeg/256x256bb.jpg" alt="img">
+            <p class="txt">EASY NOTES.</p>
+        </div>
+       <div class="info">
+        <h1 style="color: rgb(3, 0, 88);">Personal info</h1>
+        <p style="color:rgb(68, 68, 68);">Please provide your name,email address and phone number.</p>
+            <p>Full Name</p>
+            <input type="text" placeholder="e.g.Stephen King" id="cont-name" onkeyup="checkname()">
+            <span id="name-error"></span>
+            <p>Email Address</p>
+            <input type="text" placeholder="e.g.Stephen@lorem.com" id="cont-email" onkeyup="checkemail()">
+            <span id="email-error"></span>
+            <p>Phone Number</p>
+            <input type="text" placeholder="e.g.1234567890" id="cont-phone" onkeyup="checkphone()">
+            <span id="phone-error"></span>
+            <section>
+                <button type="submit" class="btn" onclick="openpopup()">Submit</button>            
+            </section>
+        </div>	
+       
+        <div class="popup" id="popup">
+            <img src="CSS/tic.jpg" alt="tic mark">
+            <h1>Thank You!</h1>
+            <p>Your details has been successfully submitted.Thanks!</p>
+            <button type="button"><a href="NOTES(PAGE 2).html" target="_blank">OK</a></button>
+        </div>
+
+    </div> 
+    <script src="JS/SCRIPT(PAGE 1).js"></script> 
+</body>
+</html>
